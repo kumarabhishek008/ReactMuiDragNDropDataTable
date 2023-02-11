@@ -1,24 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import CommonTable from './components/Table';
+import { Grid } from '@mui/material';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Grid container mt={4}>
+      <Grid item lg={6} xs={11} margin="auto">
+        <CommonTable/>
+      </Grid>
+    </Grid>
+    </>
   );
 }
 
